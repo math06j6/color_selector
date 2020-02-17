@@ -43,8 +43,12 @@ function updateAll(event) {
 
 function setColor() {
 	body.style.backgroundColor = input.value;
-	colorCode.innerHTML = input.value;
+  colorCode.innerHTML = input.value;
+  
+  const colorCode = document.getElementById("colorCode");
+  colorCode.innerHTML = input.value;
 }
+
 
 // function updateAll(event) {
 //   document.querySelectorAll("p").forEach(function(p) {
