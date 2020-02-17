@@ -127,14 +127,14 @@ article {
 }
 
 .name,
-.hexcode,
+#hexcode,
 .rgb,
 .hsl {
   color: var(--backgroundColor);
   font-size: 1rem;
 }
 
-.hexcode,
+#hexcode,
 .rgb,
 .hsl {
   color: gray;

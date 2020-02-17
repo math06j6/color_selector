@@ -4,13 +4,15 @@
 
 window.addEventListener("DOMContentLoaded", start);
 
-const colorLabel = document.querySelector("#label");
+
 let picked;
 let defaultColor = "#0000ff";
+const HTML = {};
 
 
 function start() {
   console.log("start");
+  HTML.colorLabel = document.querySelector("#label");
 
   startup();
 }
@@ -22,23 +24,16 @@ function startup() {
   picked = document.querySelector("#picked");
   picked.value = defaultColor;
   picked.addEventListener("input", updateFirst, false);
-  picked.addEventListener("change", updateAll, false);
   picked.select();
 }
 
 
 function updateFirst(event) {
-  const p = document.querySelector(".my-color");
+  const newColor = document.querySelector(".my-color");
 
-  if (p) {
-    p.style.background = event.target.value;
+  if (newColor) {
+    newColor.style.background = event.target.value;
   }
-}
-
-function updateAll(event) {
-  document.querySelectorAll("p").forEach(function(p) {
-    p.style.color = event.target.value;
-  });
 }
 
 function setColor() {
@@ -47,6 +42,8 @@ function setColor() {
   
   const colorCode = document.getElementById("colorCode");
   colorCode.innerHTML = input.value;
+
+ 
 }
 
 
