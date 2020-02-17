@@ -1,0 +1,163 @@
+:root {
+  --backgroundColor: #202020;
+  --baseColor: white;
+  --colorTwo: #6e6e6e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  background: var(--backgroundColor);
+  color: var(--baseColor);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+  color: var(--colorTwo);
+}
+
+h1,
+h2 {
+  margin: 0 0 0.5rem;
+}
+
+p,
+label,
+li {
+  font-weight: 400;
+  color: var(--baseColor);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.hero {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 100%;
+  color: var(--baseColor);
+  padding: 10vh 1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+article {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.color-card {
+  text-align: left;
+  background: white;
+  transition: transform 300ms ease-in-out, box-shadow 400ms ease, background 100ms ease;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  box-shadow: 0px 5px 20px rgba(128, 128, 128, 0.1);
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-flow: column;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 350px;
+  margin: 1rem;
+
+}
+
+.color-card:hover {
+  cursor: pointer;
+}
+
+
+.my-color{
+  flex: 1;
+  height: 100%;
+  min-height: 200px;
+  min-width: 280px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  background-color: #0000ff;
+}
+
+.card-info {
+ padding: 1.5rem;
+    
+}
+
+.name,
+.hexcode{
+  color: var(--backgroundColor);
+  font-size: 1rem;
+}
+
+.hexcode {
+  margin-top: 3px;
+  color: gray;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: calc(4rem + 2vw);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  
+}
+
+
+
+
+

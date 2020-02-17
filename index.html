@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>11C.03.01 - Color selector</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap" rel="stylesheet">  
+</head>
+  
+<body data-house="">
+    <header class="hero">
+        <span class="title-header">
+          <h1>Color selector</h1>
+          <h2>11C.03.01</h2>
+        </span>
+    </header>
+    <main>
+        <article class="top">
+          <p>Color Selector</p>
+
+          <div>
+              <input type="color" id="head" name="head"
+                     value="#e66465">
+              <label for="head">Head</label>
+          </div>
+          
+          <div>
+              <input type="color" id="body" name="body"
+                      value="#f6b73c">
+              <label for="body">Body</label>
+          </div>
+          
+        </article>
+
+        <article>
+          <label for="picked">Color:</label>
+          <input type="color" id="picked" name="picked" value="#e66465">
+
+          <section class="container-card">
+            <div class="color-card">
+             <div class="my-color"></div>
+              <div class="card-info">
+                <div class="name">Mustard</div>
+                <div class="hexcode">#FFD151</div>
+              </div>
+            </div>
+          </section>
+        </article>  
+      </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
