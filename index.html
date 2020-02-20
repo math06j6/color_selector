@@ -7,36 +7,80 @@
     <title>11C.03.01 - Color selector</title>
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style.css" />
-   
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap" rel="stylesheet">  
-</head>
-  
-<body data-house="">
-    <header class="hero">
-        <span class="title-header">
-          <h1>Color selector</h1>
-          <h2>11C.03.01</h2>
-        </span>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body data-house="">
+    <header class="title-header">
+      <h1>Color selector</h1>
+      <h2>11C.03.01</h2>
     </header>
     <main>
-        <article>
+      <article class="top">
+        <fieldset id="color_harmonies">
+          <legend>Apply Color Harmony</legend>
+          <label for="analogous"><input type="radio" name="analogous" id="analogous" value="analogous" checked />Analogous</label>
+          <label for="monochromatic"><input type="radio" name="color_rule" id="monochromatic" value="monochromatic" />Monochromatic</label>
+          <label for="triad"><input type="radio" name="color_rule" id="triad" value="triad" />Triad</label>
+          <label for="complementary"> <input type="radio" name="color_rule" id="complementary" value="complementary" />Complementary</label>
+          <label for="compound"><input type="radio" name="color_rule" id="compound" value="compound" />Compound</label>
+          <label for="shades"><input type="radio" name="color_rule" id="shades" value="shades" />Shades</label>
+        </fieldset>
+        <section>
           <label for="picked">Selected color:</label>
-          <input type="color" id="picked" name="picked" value="#e66465">
+          <input type="color" class="color-picker" id="picked" name="picked" value="#0000ff" />
+        </section>
+      </article>
+      <article class="container-cards">
+        <div id="one" class="color-card">
+          <div class="my-color"></div>
+          <div class="card-info">
+            <div class="name">Color</div>
+            <p class="hex">HEX: #0000ff</p>
+            <p class="rgb">RGB:(0, 0, 255);</p>
+            <p class="hsl">HSL: 240, 100%, 50%</p>
+          </div>
+        </div>
+        <div id="two" class="color-card">
+          <div class="my-color"></div>
+          <div class="card-info">
+            <div class="name">Color</div>
+            <p class="hex">HEX: #0000ff</p>
+            <p class="rgb">RGB:(0, 0, 255);</p>
+            <p class="hsl">HSL: 240, 100%, 50%</p>
+          </div>
+        </div>
+        <div id="three" class="color-card">
+          <div class="my-color"></div>
+          <div class="card-info">
+            <div class="name">Color</div>
+            <p class="hex">HEX: #0000ff</p>
+            <p class="rgb">RGB:(0, 0, 255);</p>
+            <p class="hsl">HSL: 240, 100%, 50%</p>
+          </div>
+        </div>
+        <div id="four" class="color-card">
+          <div class="my-color"></div>
+          <div class="card-info">
+            <div class="name">Color</div>
+            <p class="hex">HEX: #0000ff</p>
+            <p class="rgb">RGB:(0, 0, 255);</p>
+            <p class="hsl">HSL: 240, 100%, 50%</p>
+          </div>
+        </div>
+        <div id="five" class="color-card">
+          <div class="my-color"></div>
+          <div class="card-info">
+            <div class="name">Color</div>
+            <p class="hex">HEX: #0000ff</p>
+            <p class="rgb">RGB:(0, 0, 255);</p>
+            <p class="hsl">HSL: 240, 100%, 50%</p>
+          </div>
+        </div>
+      </article>
+    </main>
 
-          <section class="container-card">
-            <div class="color-card">
-             <div class="my-color"></div>
-              <div class="card-info">
-                <div class="name">Color</div>
-                <p id="hexcode">HEX: #FFD151</p>
-                <p class="rgb">RGB:</p>
-                <p class="hsl">HSL:</p>
-              </div>
-            </div>
-          </section>
-        </article>  
-      </main>
-    
     <script src="script.js"></script>
   </body>
 </html>
